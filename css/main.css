@@ -22,6 +22,7 @@ main > #product-overview > h1 {
 
 main > #plans > h1.section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 
 main > #plans > .plan-list {
@@ -36,6 +37,13 @@ main > #plans > .plan-list > .plan {
   display: inline-block;
   width: 30%;
   vertical-align: middle;
+}
+
+main > #plans > .plan-list > .plan.active {
+  background-color: #19b84c;
+  color: white;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
