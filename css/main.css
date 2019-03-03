@@ -55,6 +55,7 @@ main > #plans > h1.section-title {
 
 .main-header > .main-nav > .main-nav__items > .main-nav__item {
   display: inline-block;
+  margin: 0 16px;
 }
 
 .main-header > .main-nav > .main-nav__items > .main-nav__item a {
