@@ -9,18 +9,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#product-overview {
-  background: #ff3737;
+main > #product-overview {
+  background: #ff3791;
   width: 100%;
   padding: 10px;
   height: 528px;
 }
 
-#product-overview h1 {
+main > #product-overview > h1 {
   color: white;
 }
 
-.section-title {
+main > #plans > h1.section-title {
   color: #2ddf5c;
 }
 
@@ -29,4 +29,35 @@ body {
   background-color: #2ddf5c;
   padding: 8px 16px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header > div > .main-header__brand {
+  font-weight: bold;
+  color: #0e4f1f;
+  text-decoration: none;
+}
+
+.main-header > .main-nav {
+  display: inline-block;
+  width: calc(100% - 55px);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-header > .main-nav > .main-nav__items {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header > .main-nav > .main-nav__items > .main-nav__item {
+  display: inline-block;
+}
+
+.main-header > .main-nav > .main-nav__items > .main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+}
