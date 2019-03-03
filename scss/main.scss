@@ -7,189 +7,189 @@ $planActiveColor: white;
 $planActiveBackgroundColor: #19b84c;
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 main {
-  > #product-overview {
-    background: url("/freedom.jpg");
-    width: 100%;
-    padding: 10px;
-    height: 528px;
-    > h1 {
-      color: white;
+    > #product-overview {
+        background: url("/freedom.jpg");
+        width: 100%;
+        padding: 10px;
+        height: 528px;
+        > h1 {
+            color: white;
+        }
     }
-  }
-  > #plans {
-    > .plan-list {
-      text-align: center;
-      > .plan {
-        background-color: #d5ffdc;
-        text-align: center;
-        padding: 16px;
-        margin: 8px;
-        display: inline-block;
-        width: 30%;
-        vertical-align: middle;
-        &.active {
-          background-color: $planActiveBackgroundColor;
-          color: $planActiveColor;
-          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-          > .plan-annotation {
-            background-color: $planActiveColor;
-            color: $planActiveBackgroundColor;
-            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-            padding: 8px;
-            border-radius: 8px;
-          }
-          > .plan-title {
-            color: $planActiveColor;
-          }
-          > .plan-price {
-            color: $headerTextColor;
-          }
-        }
-        > .plan-title {
-          color: $headerTextColor;
-        }
-        > .plan-price {
-          color: #858585;
-        }
-        > .plan-features {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          > .plan-feature {
-            margin: 8px 0;
-          }
-        }
-        > div {
-          > button {
-            &.button {
-              background-color: $headerTextColor;
-              color: $headerTextActiveColor;
-              font: inherit;
-              border: 1.5px solid $headerTextColor;
-              padding: 8px;
-              border-radius: 8px;
-              cursor: pointer;
-              font-weight: bold;
-              &:hover,
-              &:active {
-                background-color: $headerTextActiveColor;
-                color: $headerTextColor;
-              }
-              &:focus {
-                outline: none;
-              }
+    > #plans {
+        > .plan-list {
+            text-align: center;
+            > .plan {
+                background-color: #d5ffdc;
+                text-align: center;
+                padding: 16px;
+                margin: 8px;
+                display: inline-block;
+                width: 30%;
+                vertical-align: middle;
+                &.active {
+                    background-color: $planActiveBackgroundColor;
+                    color: $planActiveColor;
+                    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+                    > .plan-annotation {
+                        background-color: $planActiveColor;
+                        color: $planActiveBackgroundColor;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+                        padding: 8px;
+                        border-radius: 8px;
+                    }
+                    > .plan-title {
+                        color: $planActiveColor;
+                    }
+                    > .plan-price {
+                        color: $headerTextColor;
+                    }
+                }
+                > .plan-title {
+                    color: $headerTextColor;
+                }
+                > .plan-price {
+                    color: #858585;
+                }
+                > .plan-features {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    > .plan-feature {
+                        margin: 8px 0;
+                    }
+                }
+                > div {
+                    > button {
+                        &.button {
+                            background-color: $headerTextColor;
+                            color: $headerTextActiveColor;
+                            font: inherit;
+                            border: 1.5px solid $headerTextColor;
+                            padding: 8px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: bold;
+                            &:hover,
+                            &:active {
+                                background-color: $headerTextActiveColor;
+                                color: $headerTextColor;
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
-  > #key-features {
-    background-color: $headerTextActiveBackgroundColor;
-    margin-top: 80px;
-    padding: 16px;
-    > h1 {
-      &.section-title {
-        color: white;
-      }
-    }
-    > .key-feature_list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      > .key-feature {
-        display: inline-block;
-        width: 30%;
-        vertical-align: top;
-        > .key-feature_image {
-          background-color: #ffcede;
-          width: 128px;
-          height: 128px;
-          border: 2px solid #424242;
-          border-radius: 50%;
-          margin: auto;
+    > #key-features {
+        background-color: $headerTextActiveBackgroundColor;
+        margin-top: 80px;
+        padding: 16px;
+        > h1 {
+            &.section-title {
+                color: white;
+            }
         }
-        > .key-feature_description {
-          text-align: center;
-          font-weight: bold;
-          color: white;
-          font-size: 20px;
+        > .key-feature_list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            > .key-feature {
+                display: inline-block;
+                width: 30%;
+                vertical-align: top;
+                > .key-feature_image {
+                    background-color: #ffcede;
+                    width: 128px;
+                    height: 128px;
+                    border: 2px solid #424242;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+                > .key-feature_description {
+                    text-align: center;
+                    font-weight: bold;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 main {
-  h1 {
-    &.section-title {
-      color: $headerBackgroundColor;
-      text-align: center;
+    h1 {
+        &.section-title {
+            color: $headerBackgroundColor;
+            text-align: center;
+        }
     }
-  }
 }
 
 .main-header {
-  width: 100%;
-  background-color: $headerBackgroundColor;
-  padding: 16px;
-  > div {
-    display: inline-block;
-    vertical-align: middle;
-    > .main-header__brand {
-      font-weight: bold;
-      color: $headerTextColor;
-      text-decoration: none;
-    }
-  }
-  > .main-nav {
-    display: inline-block;
-    width: calc(100% - 55px);
-    text-align: right;
-    vertical-align: middle;
-    > .main-nav__items {
-      padding: 0;
-      margin: 0;
-      > .main-nav__item {
+    width: 100%;
+    background-color: $headerBackgroundColor;
+    padding: 16px;
+    > div {
         display: inline-block;
-        margin: 0 16px;
-        &.active {
-          > a {
-            color: $headerTextActiveColor;
-            background-color: $headerTextActiveBackgroundColor;
-            padding: 8px 16px;
-            border-radius: 8px;
-            &:hover,
-            &:active {
-              color: $headerTextActiveBackgroundColor;
-              background-color: $headerTextActiveColor;
-              border: none;
-            }
-          }
+        vertical-align: middle;
+        > .main-header__brand {
+            font-weight: bold;
+            color: $headerTextColor;
+            text-decoration: none;
         }
-        > a {
-          text-decoration: none;
-          color: $headerTextColor;
-          font-weight: bold;
-          padding: 5px 0;
-          &:hover,
-          &:active {
-            color: $headerTextActiveColor;
-            border-bottom: 5px solid $headerTextActiveColor;
-          }
-        }
-      }
     }
-  }
+    > .main-nav {
+        display: inline-block;
+        width: calc(100% - 55px);
+        text-align: right;
+        vertical-align: middle;
+        > .main-nav__items {
+            padding: 0;
+            margin: 0;
+            > .main-nav__item {
+                display: inline-block;
+                margin: 0 16px;
+                &.active {
+                    > a {
+                        color: $headerTextActiveColor;
+                        background-color: $headerTextActiveBackgroundColor;
+                        padding: 8px 16px;
+                        border-radius: 8px;
+                        &:hover,
+                        &:active {
+                            color: $headerTextActiveBackgroundColor;
+                            background-color: $headerTextActiveColor;
+                            border: none;
+                        }
+                    }
+                }
+                > a {
+                    text-decoration: none;
+                    color: $headerTextColor;
+                    font-weight: bold;
+                    padding: 5px 0;
+                    &:hover,
+                    &:active {
+                        color: $headerTextActiveColor;
+                        border-bottom: 5px solid $headerTextActiveColor;
+                    }
+                }
+            }
+        }
+    }
 }
