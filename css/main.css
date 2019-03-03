@@ -20,11 +20,6 @@ main > #product-overview > h1 {
   color: white;
 }
 
-main > #plans > h1.section-title {
-  color: #2ddf5c;
-  text-align: center;
-}
-
 main > #plans > .plan-list {
   text-align: center;
 }
@@ -99,6 +94,50 @@ main > #plans > .plan-list > .plan > div > button.button:hover, main > #plans > 
 
 main > #plans > .plan-list > .plan > div > button.button:focus {
   outline: none;
+}
+
+main > #key-features {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+main > #key-features > h1.section-title {
+  color: white;
+}
+
+main > #key-features > .key-feature_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main > #key-features > .key-feature_list > .key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+main > #key-features > .key-feature_list > .key-feature > .key-feature_image {
+  background-color: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}
+
+main > #key-features > .key-feature_list > .key-feature > .key-feature_description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+main h1.section-title {
+  color: #2ddf5c;
+  text-align: center;
 }
 
 .main-header {
