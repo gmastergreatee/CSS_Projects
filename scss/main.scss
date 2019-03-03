@@ -1,5 +1,7 @@
 $primaryColor: #2ddf5c;
 $headerTextColor: #0e4f1f;
+$headerTextActiveColor: white;
+$headerTextActiveBackgroundColor: #ff1b68;
 
 * {
   box-sizing: border-box;
@@ -13,7 +15,7 @@ body {
 
 main {
   > #product-overview {
-    background: #ff3791;
+    background: $headerTextActiveBackgroundColor;
     width: 100%;
     padding: 10px;
     height: 528px;
@@ -35,7 +37,7 @@ main {
 .main-header {
   width: 100%;
   background-color: $primaryColor;
-  padding: 8px 16px;
+  padding: 16px;
   > div {
     display: inline-block;
     vertical-align: middle;
@@ -56,9 +58,30 @@ main {
       > .main-nav__item {
         display: inline-block;
         margin: 0 16px;
-        a {
+        &.active {
+          > a {
+            color: $headerTextActiveColor;
+            background-color: $headerTextActiveBackgroundColor;
+            padding: 8px 16px;
+            border-radius: 8px;
+            &:hover,
+            &:active {
+              color: $headerTextActiveBackgroundColor;
+              background-color: $headerTextActiveColor;
+              border: none;
+            }
+          }
+        }
+        > a {
           text-decoration: none;
           color: $headerTextColor;
+          font-weight: bold;
+          padding: 5px 0;
+          &:hover,
+          &:active {
+            color: $headerTextActiveColor;
+            border-bottom: 5px solid $headerTextActiveColor;
+          }
         }
       }
     }

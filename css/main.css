@@ -10,7 +10,7 @@ body {
 }
 
 main > #product-overview {
-  background: #ff3791;
+  background: #ff1b68;
   width: 100%;
   padding: 10px;
   height: 528px;
@@ -27,7 +27,7 @@ main > #plans > h1.section-title {
 .main-header {
   width: 100%;
   background-color: #2ddf5c;
-  padding: 8px 16px;
+  padding: 16px;
 }
 
 .main-header > div {
@@ -58,7 +58,27 @@ main > #plans > h1.section-title {
   margin: 0 16px;
 }
 
-.main-header > .main-nav > .main-nav__items > .main-nav__item a {
+.main-header > .main-nav > .main-nav__items > .main-nav__item.active > a {
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-header > .main-nav > .main-nav__items > .main-nav__item.active > a:hover, .main-header > .main-nav > .main-nav__items > .main-nav__item.active > a:active {
+  color: #ff1b68;
+  background-color: white;
+  border: none;
+}
+
+.main-header > .main-nav > .main-nav__items > .main-nav__item > a {
   text-decoration: none;
   color: #0e4f1f;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.main-header > .main-nav > .main-nav__items > .main-nav__item > a:hover, .main-header > .main-nav > .main-nav__items > .main-nav__item > a:active {
+  color: white;
+  border-bottom: 5px solid white;
 }
