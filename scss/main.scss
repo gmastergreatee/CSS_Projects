@@ -1,4 +1,4 @@
-$primaryColor: #2ddf5c;
+$headerBackgroundColor: #2ddf5c;
 $headerTextColor: #0e4f1f;
 $headerTextActiveColor: white;
 $headerTextActiveBackgroundColor: #ff1b68;
@@ -26,7 +26,7 @@ main {
   > #plans {
     > h1 {
       &.section-title {
-        color: $primaryColor;
+        color: $headerBackgroundColor;
       }
     }
     > p {
@@ -36,7 +36,7 @@ main {
 
 .main-header {
   width: 100%;
-  background-color: $primaryColor;
+  background-color: $headerBackgroundColor;
   padding: 16px;
   > div {
     display: inline-block;
