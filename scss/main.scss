@@ -47,6 +47,21 @@ main {
           background-color: $planActiveBackgroundColor;
           color: $planActiveColor;
           box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+          > .plan-annotation {
+            background-color: $planActiveColor;
+            color: $planActiveBackgroundColor;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            border-radius: 8px;
+          }
+        }
+        > .plan-features {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          > .plan-feature {
+            margin: 8px 0;
+          }
         }
       }
     }
