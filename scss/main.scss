@@ -54,6 +54,18 @@ main {
             padding: 8px;
             border-radius: 8px;
           }
+          > .plan-title {
+            color: $planActiveColor;
+          }
+          > .plan-price {
+            color: $headerTextColor;
+          }
+        }
+        > .plan-title {
+          color: $headerTextColor;
+        }
+        > .plan-price {
+          color: #858585;
         }
         > .plan-features {
           list-style: none;
@@ -61,6 +73,25 @@ main {
           padding: 0;
           > .plan-feature {
             margin: 8px 0;
+          }
+        }
+        > div {
+          > button {
+            &.button {
+              background-color: $headerTextColor;
+              color: $headerTextActiveColor;
+              font: inherit;
+              border: 1.5px solid $headerTextColor;
+              padding: 8px;
+              border-radius: 8px;
+              cursor: pointer;
+              font-weight: bold;
+              &:hover,
+              &:active {
+                background-color: $headerTextActiveColor;
+                color: $headerTextColor;
+              }
+            }
           }
         }
       }

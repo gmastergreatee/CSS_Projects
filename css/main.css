@@ -55,6 +55,22 @@ main > #plans > .plan-list > .plan.active > .plan-annotation {
   border-radius: 8px;
 }
 
+main > #plans > .plan-list > .plan.active > .plan-title {
+  color: white;
+}
+
+main > #plans > .plan-list > .plan.active > .plan-price {
+  color: #0e4f1f;
+}
+
+main > #plans > .plan-list > .plan > .plan-title {
+  color: #0e4f1f;
+}
+
+main > #plans > .plan-list > .plan > .plan-price {
+  color: #858585;
+}
+
 main > #plans > .plan-list > .plan > .plan-features {
   list-style: none;
   margin: 0;
@@ -63,6 +79,22 @@ main > #plans > .plan-list > .plan > .plan-features {
 
 main > #plans > .plan-list > .plan > .plan-features > .plan-feature {
   margin: 8px 0;
+}
+
+main > #plans > .plan-list > .plan > div > button.button {
+  background-color: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+main > #plans > .plan-list > .plan > div > button.button:hover, main > #plans > .plan-list > .plan > div > button.button:active {
+  background-color: white;
+  color: #0e4f1f;
 }
 
 .main-header {
