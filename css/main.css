@@ -97,6 +97,10 @@ main > #plans > .plan-list > .plan > div > button.button:hover, main > #plans > 
   color: #0e4f1f;
 }
 
+main > #plans > .plan-list > .plan > div > button.button:focus {
+  outline: none;
+}
+
 .main-header {
   width: 100%;
   background-color: #2ddf5c;

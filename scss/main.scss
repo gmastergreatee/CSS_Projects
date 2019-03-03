@@ -91,6 +91,9 @@ main {
                 background-color: $headerTextActiveColor;
                 color: $headerTextColor;
               }
+              &:focus {
+                outline: none;
+              }
             }
           }
         }
