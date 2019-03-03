@@ -24,6 +24,20 @@ main > #plans > h1.section-title {
   color: #2ddf5c;
 }
 
+main > #plans > .plan-list {
+  text-align: center;
+}
+
+main > #plans > .plan-list > .plan {
+  background-color: #d5ffdc;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
 .main-header {
   width: 100%;
   background-color: #2ddf5c;

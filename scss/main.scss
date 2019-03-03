@@ -15,7 +15,7 @@ body {
 
 main {
   > #product-overview {
-    background: url('/freedom.jpg');
+    background: url("/freedom.jpg");
     width: 100%;
     padding: 10px;
     height: 528px;
@@ -29,7 +29,17 @@ main {
         color: $headerBackgroundColor;
       }
     }
-    > p {
+    > .plan-list {
+      text-align: center;
+      > .plan {
+        background-color: #d5ffdc;
+        text-align: center;
+        padding: 16px;
+        margin: 8px;
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+      }
     }
   }
 }
