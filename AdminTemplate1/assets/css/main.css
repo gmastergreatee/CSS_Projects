@@ -1,0 +1,136 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar,
+.main-body {
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #7e7e7e;
+    color: white;
+}
+
+.main-body {
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: #eee;
+    border-left: 2px solid #eee;
+    display: flex;
+    flex-flow: column;
+}
+
+.sidebar .header,
+.main-body .header {
+    height: 60px;
+    white-space: nowrap;
+    font-size: 28px;
+    background-color: #4b4b4b;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.sidebar .header {
+    display: flex;
+    background-color: #484953;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-right: 0;
+}
+
+.header .sidebar-toggler {
+    background: url("../svg/ToggleSidebarBtn.svg");
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent;
+    margin-right: 10px;
+}
+
+.header .sidebar-toggler:hover {
+    cursor: pointer;
+    border-color: #838383;
+    box-shadow: 0 0 5px black;
+}
+
+.sidebar.closed {
+    width: 0;
+}
+
+.main-body.open {
+    width: 100%;
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-flow: column;
+}
+
+.sidebar .menu .menu-item {
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .menu .menu-item:hover {
+    background-color: #484953;
+}
+
+.menu-item .menu-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.ico1 {
+    background: url("../svg/ico1.svg");
+}
+
+.ico2 {
+    background: url("../svg/ico2.svg");
+}
+
+.ico3 {
+    background: url("../svg/ico3.svg");
+}
+
+.ico4 {
+    background: url("../svg/ico4.svg");
+}
+
+.body {
+    background-color: #eee;
+    width: calc(100% - 2px);
+    height: calc(100% - 106px);
+    border-top: 2px solid #eee;
+}
+
+.footer {
+    height: 40px;
+    border-top: 2px solid #eee;
+    background-color: #a0a0a0;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 18px;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
